@@ -3,3 +3,5 @@ venv/
 */*.pth
 */runs/
 */PennFudanPed/
+models/*.pth
+models/
