@@ -8,11 +8,25 @@ import data_setup, engine, model_builder, utils
 
 from torchvision import transforms
 
+from argparse import ArgumentParser
+
+parser = ArgumentParser(description="PyTorch Image Classification")
+
+parser.add_argument("--batch_size", type=int, default=32, help="input batch size for training data (default: 32)")
+
+parser.add_argument("--epochs", type=int, default=10, help="number of epochs to train (default: 10)")
+
+parser.add_argument("--hidden_units", type=int, default=20, help="No. of hidden units in the neural network (default: 20)")
+
+parser.add_argument("--learning_rate", type=float, default=0.01, help="Learning rate (default: 0.01)")
+
+args = parser.parse_args()
+
 # Setup Hyperparameters
-NUM_EPOCHS=50
-BATCH_SIZE=32
-HIDDEN_UNITS=10
-LEARNING_RATE=0.001
+NUM_EPOCHS = args.epochs
+BATCH_SIZE = args.batch_size
+HIDDEN_UNITS = args.hidden_units
+LEARNING_RATE = args.learning_rate
 
 # Setup directories
 train_dir = "data/pizza_steak_sushi/train"
