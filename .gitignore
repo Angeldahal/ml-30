@@ -7,3 +7,6 @@ models/*.pth
 models/
 __pycache__/
 models/
+*/*.pth
+*.pth
+*/*/*.pth
