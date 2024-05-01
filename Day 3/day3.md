@@ -1,1 +1,0 @@
-For Day 3, I continued with Pytorch building the classifier on the MNIST-dataset. Hopefully, late today i will be able to work on object detection. Also I need to be out for couple of days so, I won't be able to work on this for a while. But, I will be back soon.
